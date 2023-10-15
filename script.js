@@ -32,20 +32,11 @@ document.getElementById('search-form').addEventListener('submit', function (e) {
     const resultsDiv = document.getElementById('results');
     resultsDiv.innerHTML = ''; // Clear previous results
 
-    filteredModels.forEach(async model => {
+    filteredModels.forEach(model => {
         const modelCard = document.createElement('div');
 
-        // Create and append an image with the custom URL
+        // Create and append an image element
         const modelImage = document.createElement('img');
-        modelImage.src = model.image; // Use the image URL from the model's data
-        modelCard.appendChild(modelImage);
-
-        // Create and append model information
-        const modelInfo = document.createElement('p');
-        modelInfo.innerHTML = `Name: ${model.name}<br>Height: ${model.height}<br>Hair Color: ${model.hair_color}`;
-        modelCard.appendChild(modelInfo);
-
-        resultsDiv.appendChild(modelCard);
 
         // THIS IS WHERE THE PERSONAL ACCESS TOKEN STUFF IS
         // Use the code below to fetch private GitHub images with your personal access token.
@@ -53,29 +44,35 @@ document.getElementById('search-form').addEventListener('submit', function (e) {
         // Replace 'YOUR_PERSONAL_ACCESS_TOKEN' with your actual personal access token.
         const accessToken = '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';
 
-        // Create a function to fetch data using the token
-        async function fetchDataWithToken() {
-            const imageUrl = model.image; // Get the specific image URL for the current model.
+        const imageUrl = model.image; // Get the specific image URL for the current model.
 
-            const response = await fetch(imageUrl, {
-                headers: {
-                    Authorization: `token ${accessToken}`,
-                },
-            });
-
+        fetch(imageUrl, {
+            headers: {
+                Authorization: `token ${accessToken}`,
+            },
+        })
+        .then(response => {
             if (response.status === 200) {
-                const imageBlob = await response.blob();
-                // Create an image element and set its source to the fetched image
-                const imageElement = document.createElement('img');
-                imageElement.src = URL.createObjectURL(imageBlob);
-                // Append the image to the model card
-                modelCard.appendChild(imageElement);
+                return response.blob();
             } else {
                 console.error('Failed to fetch data');
+                return null;
             }
-        }
-
-        // Call the function to fetch the image with the token for the current model.
-        fetchDataWithToken();
+        })
+        .then(imageBlob => {
+            if (imageBlob) {
+                const imageUrl = URL.createObjectURL(imageBlob);
+                modelImage.src = imageUrl;
+                // Create and append model information
+                const modelInfo = document.createElement('p');
+                modelInfo.innerHTML = `Name: ${model.name}<br>Height: ${model.height}<br>Hair Color: ${model.hair_color}`;
+                modelCard.appendChild(modelImage);
+                modelCard.appendChild(modelInfo);
+                resultsDiv.appendChild(modelCard);
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+        });
     });
 });

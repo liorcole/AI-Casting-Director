@@ -1,4 +1,4 @@
-<!-- Define your data -->
+// Define your data
 const modelsData = [
     {
         name: 'Abby Bush',

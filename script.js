@@ -1,17 +1,17 @@
-<!-- Update your data with Imgur image URLs -->
+<!-- Define your data -->
 const modelsData = [
     {
         name: 'Abby Bush',
         height: 180,
         hair_color: 'Blonde',
-        image: 'https://i.imgur.com/gJCLRmi.png', // Image URL for Abby Bush on Imgur
+        image: 'images/abbybush.png', // Image URL for Abby Bush in your 'public' directory
         // Add other properties as needed
     },
     {
         name: 'Aalyah Ross',
         height: 179,
         hair_color: 'Black',
-        image: 'https://i.imgur.com/gJCLRmi.png', // Image URL for Aalyah Ross on Imgur
+        image: 'images/aalyahross.png', // Image URL for Aalyah Ross in your 'public' directory
         // Add other properties as needed
     },
 ];

@@ -11,7 +11,7 @@ const modelsData = [
         name: 'Aalyah Ross',
         height: 179,
         hair_color: 'Black',
-        image: 'https://raw.githubusercontent.com/your-username/your-repo/main/images/aalyahross.png', // Image URL for Aalyah Ross
+        image: 'https://raw.githubusercontent.com/liorcole/AI-Casting-Director/main/images/aalyahross.png', // Image URL for Aalyah Ross
         // Add other properties as needed
     },
 ];

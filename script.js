@@ -11,16 +11,9 @@ const modelsData = [
         name: 'Aalyah Ross',
         height: 179,
         hair_color: 'Black',
-        image: 'images/aalyahross.png', // Image URL for Aalyah Ross
+        image: 'https://raw.githubusercontent.com/your-username/your-repo/main/images/aalyahross.png', // Image URL for Aalyah Ross
         // Add other properties as needed
     },
-    // {
-    //     name: 'Test',
-    //     height: 180,
-    //     hair_color: 'Blonde',
-    //     image: 'test.png', // Image URL for Test
-    //     // Add other properties as needed
-    // },
 ];
 
 // Event listener for form submission
@@ -53,5 +46,32 @@ document.getElementById('search-form').addEventListener('submit', function (e) {
         modelCard.appendChild(modelInfo);
 
         resultsDiv.appendChild(modelCard);
+
+        // THIS IS WHERE THE PERSONAL ACCESS TOKEN STUFF IS
+        // Use the code below to fetch private GitHub images with your personal access token.
+
+        // Replace 'YOUR_PERSONAL_ACCESS_TOKEN' with your actual personal access token.
+        const accessToken = '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';
+
+        // Create a function to fetch data using the token
+        async function fetchDataWithToken() {
+            const imageUrl = model.image; // Get the specific image URL for the current model.
+
+            const response = await fetch(imageUrl, {
+                headers: {
+                    Authorization: `token ${accessToken}`,
+                },
+            });
+
+            if (response.status === 200) {
+                const imageBlob = await response.blob();
+                // Now you can use 'imageBlob' to display the image in your web application.
+            } else {
+                console.error('Failed to fetch data');
+            }
+        }
+
+        // Call the function to fetch the image with the token for the current model.
+        fetchDataWithToken();
     });
 });

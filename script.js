@@ -4,7 +4,7 @@ const modelsData = [
         name: 'Abby Bush',
         height: 180,
         hair_color: 'Blonde',
-        image: 'images/abbybush.png', // Image URL for Abby Bush
+        image: 'https://raw.githubusercontent.com/your-username/your-repo/main/images/abbybush.png', // Image URL for Abby Bush
         // Add other properties as needed
     },
     {

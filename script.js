@@ -37,42 +37,9 @@ document.getElementById('search-form').addEventListener('submit', function (e) {
 
         // Create and append an image element
         const modelImage = document.createElement('img');
+        modelImage.src = model.image; // Use the image URL from the model's data
+        modelCard.appendChild(modelImage);
 
-        // THIS IS WHERE THE PERSONAL ACCESS TOKEN STUFF IS
-        // Use the code below to fetch private GitHub images with your personal access token.
-
-        // Replace 'YOUR_PERSONAL_ACCESS_TOKEN' with your actual personal access token.
-        const accessToken = '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';
-
-        const imageUrl = model.image; // Get the specific image URL for the current model.
-
-        fetch(imageUrl, {
-            headers: {
-                Authorization: `token ${accessToken}`,
-            },
-        })
-        .then(response => {
-            if (response.status === 200) {
-                return response.blob();
-            } else {
-                console.error('Failed to fetch data');
-                return null;
-            }
-        })
-        .then(imageBlob => {
-            if (imageBlob) {
-                const imageUrl = URL.createObjectURL(imageBlob);
-                modelImage.src = imageUrl;
-                // Create and append model information
-                const modelInfo = document.createElement('p');
-                modelInfo.innerHTML = `Name: ${model.name}<br>Height: ${model.height}<br>Hair Color: ${model.hair_color}`;
-                modelCard.appendChild(modelImage);
-                modelCard.appendChild(modelInfo);
-                resultsDiv.appendChild(modelCard);
-            }
-        })
-        .catch(error => {
-            console.error('Error:', error);
-        });
-    });
-});
+        // Create and append model information
+        const modelInfo = document.createElement('p');
+        modelInfo.innerHTML = `Name: ${model.name}<br>Height: ${model.height}<br>Hair Color: ${model.hair_color}`;

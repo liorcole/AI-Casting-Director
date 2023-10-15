@@ -1,17 +1,17 @@
-// Define your data
+<!-- Update your data with Imgur image URLs -->
 const modelsData = [
     {
         name: 'Abby Bush',
         height: 180,
         hair_color: 'Blonde',
-        image: 'https://raw.githubusercontent.com/liorcole/AI-Casting-Director/main/images/abbybush.png', // Image URL for Abby Bush
+        image: 'https://i.imgur.com/gJCLRmi.png', // Image URL for Abby Bush on Imgur
         // Add other properties as needed
     },
     {
         name: 'Aalyah Ross',
         height: 179,
         hair_color: 'Black',
-        image: 'https://raw.githubusercontent.com/liorcole/AI-Casting-Director/main/images/aalyahross.png', // Image URL for Aalyah Ross
+        image: 'https://i.imgur.com/gJCLRmi.png', // Image URL for Aalyah Ross on Imgur
         // Add other properties as needed
     },
 ];
@@ -43,3 +43,8 @@ document.getElementById('search-form').addEventListener('submit', function (e) {
         // Create and append model information
         const modelInfo = document.createElement('p');
         modelInfo.innerHTML = `Name: ${model.name}<br>Height: ${model.height}<br>Hair Color: ${model.hair_color}`;
+        modelCard.appendChild(modelInfo);
+
+        resultsDiv.appendChild(modelCard);
+    });
+});

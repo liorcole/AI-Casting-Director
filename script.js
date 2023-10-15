@@ -4,14 +4,14 @@ const modelsData = [
         name: 'Abby Bush',
         height: 180,
         hair_color: 'Blonde',
-        image: 'public/abbybush.png', // Image URL for Abby Bush
+        image: 'images/abbybush.png', // Image URL for Abby Bush
         // Add other properties as needed
     },
     {
         name: 'Aalyah Ross',
         height: 179,
         hair_color: 'Black',
-        image: 'public/aalyahross.png', // Image URL for Aalyah Ross
+        image: 'images/aalyahross.png', // Image URL for Aalyah Ross
         // Add other properties as needed
     },
     // {

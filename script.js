@@ -10,7 +10,7 @@ const modelsData = [
     {
         name: 'Aalyah Ross',
         height: 179,
-        hair_color: 'Black',
+        hair_color: 'black',
         image: 'images/aalyahross.png', // Image URL for Aalyah Ross in your 'public' directory
         // Add other properties as needed
     },

@@ -32,7 +32,7 @@ document.getElementById('search-form').addEventListener('submit', function (e) {
     const resultsDiv = document.getElementById('results');
     resultsDiv.innerHTML = ''; // Clear previous results
 
-    filteredModels.forEach(model => {
+    filteredModels.forEach(async model => {
         const modelCard = document.createElement('div');
 
         // Create and append an image with the custom URL
@@ -65,7 +65,11 @@ document.getElementById('search-form').addEventListener('submit', function (e) {
 
             if (response.status === 200) {
                 const imageBlob = await response.blob();
-                // Now you can use 'imageBlob' to display the image in your web application.
+                // Create an image element and set its source to the fetched image
+                const imageElement = document.createElement('img');
+                imageElement.src = URL.createObjectURL(imageBlob);
+                // Append the image to the model card
+                modelCard.appendChild(imageElement);
             } else {
                 console.error('Failed to fetch data');
             }

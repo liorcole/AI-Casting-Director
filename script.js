@@ -61,14 +61,15 @@ const modelsData = [
 // Event listener for form submission
 document.getElementById('search-form').addEventListener('submit', function (e) {
     e.preventDefault();
-
-    const hairColor = document.getElementById('hair-color').value;
+    
+    const hairColor = document.getElementById('hair-color').value.toLowerCase();
     const height = document.getElementById('height').value;
     const instagramFollowers = parseInt(document.getElementById('instagram-followers').value);
 
     // Your search logic using the modelsData array
     const filteredModels = modelsData.filter(model => {
-        return (hairColor === "" || model.hair_color.includes(hairColor) || (Array.isArray(model.hair_color) && model.hair_color.includes(hairColor))) &&
+        //return (hairColor === "" || model.hair_color.includes(hairColor) || (Array.isArray(model.hair_color) && model.hair_color.includes(hairColor))) &&
+        return (hairColor === "" || model.hair_color.some(color => color.toLowerCase() === hairColor)) &&
             (height === "" || model.height == height) && 
             (model.instagram >= instagramFollowers); 
     });

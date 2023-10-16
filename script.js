@@ -137,13 +137,19 @@ document.getElementById('search-form').addEventListener('submit', function (e) {
     e.preventDefault();
 
     const hairColor = document.getElementById('hair-color').value.toLowerCase();
-    const height = document.getElementById('height').value;
+
+    const minHeight = parseInt(document.getElementById('min-height').value);
+    const maxHeight = parseInt(document.getElementById('max-height').value);
+    
     const instagramFollowers = parseInt(document.getElementById('instagram-followers').value);
 
     // Your search logic using the modelsData array
     const filteredModels = modelsData.filter(model => {
         return (hairColor === "" || model.hair_color.some(color => color.toLowerCase() === hairColor)) &&
-            (height === "" || model.height == height) &&
+
+            (minHeight === 0 || model.height >= minHeight) &&
+            (maxHeight === 250 || model.height <= maxHeight) &&
+            
             (model.instagram >= instagramFollowers);
     });
 

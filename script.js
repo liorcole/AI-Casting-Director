@@ -36,7 +36,7 @@ const modelsData = [
         name: 'LIOR COLE THE BEST MODEL IN THE WORLD',
         height: 183,
         hair_color: 'brown',
-        instagram: 5,100,
+        //instagram: 5,100,
         image: 'images/liorcole.png', // Image URL for Aalyah Ross in your 'public' directory
         // Add other properties as needed
     },

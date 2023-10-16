@@ -7,7 +7,7 @@ const modelsData = [
         hair_type: 'curly',
         type: 'Straight-size',
         instagram: 5100,
-        image: 'images/liorcole.png', // Image URL for Aalyah Ross in your 'public' directory
+        image: 'images/liorcole.png',
         // Add other properties as needed
     },
     {
@@ -17,17 +17,17 @@ const modelsData = [
         hair_type: 'Straight',
         type: 'Straight-size',
         instagram: 5800,
-        image: 'images/abbybush.png', // Image URL for Abby Bush in your 'public' directory
+        image: 'images/abbybush.png',
         // Add other properties as needed
     },
     {
         name: 'Aalyah Ross',
         height: 179,
         hair_color: ['black'],
-        hair_type: ['curly, dreads'],
-        type: ['Straight-size', 'Mid-size'].
+        hair_type: ['curly', 'dreads'],
+        type: ['Straight-size', 'Mid-size'],
         instagram: 1800,
-        image: 'images/aalyahross.png', // Image URL for Aalyah Ross in your 'public' directory
+        image: 'images/aalyahross.png',
         // Add other properties as needed
     },
     {
@@ -37,7 +37,7 @@ const modelsData = [
         hair_type: ['wavy'],
         type: 'Straight-size',
         instagram: 4200,
-        image: 'images/africagarcia.png', // Image URL for Aalyah Ross in your 'public' directory
+        image: 'images/africagarcia.png',
         // Add other properties as needed
     },
     {
@@ -47,7 +47,7 @@ const modelsData = [
         hair_type: ['shaved', 'curly'],
         type: 'Plus-size',
         instagram: 2900,
-        image: 'images/akonadichol.png', // Image URL for Aalyah Ross in your 'public' directory
+        image: 'images/akonadichol.png',
         // Add other properties as needed
     },
     {
@@ -57,7 +57,7 @@ const modelsData = [
         hair_type: ['wavy', 'curly'],
         type: 'Straight-size',
         instagram: 218900,
-        image: 'images/alexiscarrington.png', // Image URL for Aalyah Ross in your 'public' directory
+        image: 'images/alexiscarrington.png',
         // Add other properties as needed
     },
     {
@@ -67,37 +67,36 @@ const modelsData = [
         hair_type: 'Straight',
         type: ['Straight-size', 'Mid-size'],
         instagram: 1500,
-        image: 'images/allybarrows.png', // Image URL for Aalyah Ross in your 'public' directory
+        image: 'images/allybarrows.png',
         // Add other properties as needed
     },
     {
         name: 'Andrea Pires',
         height: 175,
-        hair_color: ['brown, black'],
+        hair_color: ['brown', 'black'],
         hair_type: 'wavy',
         instagram: 'n/a',
         type: 'Straight-size',
-        //image: 'images/andrea.png', // Add the image URL for Andrea in your 'public' directory
+        // image: 'images/andrea.png', // Add the image URL for Andrea in your 'public' directory
         // Add other properties as needed
     },
     {
         name: 'Anna Rose',
         height: 180,
         hair_color: 'brown',
-        hair_type: ['Straight, wavy'],
+        hair_type: ['Straight', 'wavy'],
         instagram: 556,
         type: 'Straight-size',
-        //image: 'images/annarose.png', // Add the image URL for Anna Rose in your 'public' directory
+        // image: 'images/annarose.png', // Add the image URL for Anna Rose in your 'public' directory
         // Add other properties as needed
     },
     {
         name: 'Anne Harjes',
         height: 180,
-        hair_color: ['blond, dirty blond'],
+        hair_color: ['blond', 'dirty blond'],
         hair_type: 'Straight',
-        instagram: 720,
         type: 'plus-size',
-        image: 'images/anneharjes.png', // Add the image URL for Anne Harjes in your 'public' directory
+        image: 'images/anneharjes.png',
         // Add other properties as needed
     },
     {
@@ -107,45 +106,44 @@ const modelsData = [
         hair_type: 'curly',
         instagram: 2400,
         type: 'Straight-size',
-        image: 'images/antonelladelgado.png', // Add the image URL for Antonella Delgado in your 'public' directory
+        image: 'images/antonelladelgado.png',
         // Add other properties as needed
     },
     {
         name: 'Aria Polkey',
         height: 176,
-        hair_color: ['dark brown, black'],
+        hair_color: ['dark brown', 'black'],
         hair_type: 'curly',
         instagram: 11000,
         type: 'Straight-size',
-        image: 'images/ariapolkey.png', // Add the image URL for Aria Polkey in your 'public' directory
+        image: 'images/ariapolkey.png',
         // Add other properties as needed
     },
     {
         name: 'Audrey Harrelson',
         height: 171,
-        hair_color: ['brown, light brown, dirty blonde'],
+        hair_color: ['brown', 'light brown', 'dirty blonde'],
         hair_type: 'straight',
-        instagram: 3800,
         type: 'mid-size',
-        image: 'images/audreyharrelson.png', // Add the image URL for Audrey Harrelson in your 'public' directory
+        instagram: 3800,
+        image: 'images/audreyharrelson.png',
         // Add other properties as needed
     }
-    ];
+];
 
 // Event listener for form submission
 document.getElementById('search-form').addEventListener('submit', function (e) {
     e.preventDefault();
-    
+
     const hairColor = document.getElementById('hair-color').value.toLowerCase();
     const height = document.getElementById('height').value;
     const instagramFollowers = parseInt(document.getElementById('instagram-followers').value);
 
     // Your search logic using the modelsData array
     const filteredModels = modelsData.filter(model => {
-        //return (hairColor === "" || model.hair_color.includes(hairColor) || (Array.isArray(model.hair_color) && model.hair_color.includes(hairColor))) &&
         return (hairColor === "" || model.hair_color.some(color => color.toLowerCase() === hairColor)) &&
-            (height === "" || model.height == height) && 
-            (model.instagram >= instagramFollowers); 
+            (height === "" || model.height == height) &&
+            (model.instagram >= instagramFollowers);
     });
 
     const resultsDiv = document.getElementById('results');

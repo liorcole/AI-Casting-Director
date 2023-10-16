@@ -3,40 +3,40 @@ const modelsData = [
     {
         name: 'Abby Bush',
         height: 180,
-        hair_color: 'Blonde',
-        //instagram: 5,800,
+        hair_color: ['Blonde'], ['Strawberry blonde'],
+        instagram: 5800,
         image: 'images/abbybush.png', // Image URL for Abby Bush in your 'public' directory
         // Add other properties as needed
     },
     {
         name: 'Aalyah Ross',
         height: 179,
-        hair_color: 'black',
-        //instagram: 1,800,
+        hair_color: ['black'],
+        instagram: 1800,
         image: 'images/aalyahross.png', // Image URL for Aalyah Ross in your 'public' directory
         // Add other properties as needed
     },
     {
         name: 'Africa Garcia',
         height: 179,
-        hair_color: 'brown',
-        //instagram: 4,200,
+        hair_color: ['brown'], ['dark brown'],
+        instagram: 4200,
         image: 'images/africagarcia.png', // Image URL for Aalyah Ross in your 'public' directory
         // Add other properties as needed
     },
     {
         name: 'Akon Adichol',
         height: 175,
-        hair_color: 'black',
-        //instagram: 2,900,
+        hair_color: ['black'], ['dark brown'],
+        instagram: 2900,
         image: 'images/akonadichol.png', // Image URL for Aalyah Ross in your 'public' directory
         // Add other properties as needed
     },
     {
         name: 'LIOR COLE THE BEST MODEL IN THE WORLD',
         height: 183,
-        hair_color: 'brown',
-        //instagram: 5,100,
+        hair_color: ['brown'], ['light brown'],
+        instagram: 5100,
         image: 'images/liorcole.png', // Image URL for Aalyah Ross in your 'public' directory
         // Add other properties as needed
     },
@@ -44,7 +44,7 @@ const modelsData = [
         name: 'Alexis Carrington',
         height: 175,
         hair_color: 'brown',
-        //instagram: 218,900,
+        instagram: 218,900,
         image: 'images/alexiscarrington.png', // Image URL for Aalyah Ross in your 'public' directory
         // Add other properties as needed
     },
@@ -52,7 +52,7 @@ const modelsData = [
         name: 'Ally Barrows',
         height: 174,
         hair_color: 'blond',
-        //instagram: 1,500,
+        instagram: 1,500,
         image: 'images/allybarrows.png', // Image URL for Aalyah Ross in your 'public' directory
         // Add other properties as needed
     },
@@ -84,7 +84,7 @@ document.getElementById('search-form').addEventListener('submit', function (e) {
 
         // Create and append model information
         const modelInfo = document.createElement('p');
-        modelInfo.innerHTML = `Name: ${model.name}<br>Height: ${model.height}<br>Hair Color: ${model.hair_color}`;
+        modelInfo.innerHTML = `Name: ${model.name}<br>Height: ${model.height}<br>Hair Color: ${model.hair_color}<br>Instagram: ${model.instagram}`;
         modelCard.appendChild(modelInfo);
 
         resultsDiv.appendChild(modelCard);

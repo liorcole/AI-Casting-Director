@@ -1,6 +1,14 @@
 // Define your data
 const modelsData = [
     {
+        name: 'LIOR COLE THE BEST MODEL IN THE WORLD',
+        height: 183,
+        hair_color: ['brown', 'light brown'],
+        instagram: 5100,
+        image: 'images/liorcole.png', // Image URL for Aalyah Ross in your 'public' directory
+        // Add other properties as needed
+    },
+    {
         name: 'Abby Bush',
         height: 180,
         hair_color: ['Blonde', 'Strawberry blonde'],
@@ -33,14 +41,6 @@ const modelsData = [
         // Add other properties as needed
     },
     {
-        name: 'LIOR COLE THE BEST MODEL IN THE WORLD',
-        height: 183,
-        hair_color: ['brown', 'light brown'],
-        instagram: 5100,
-        image: 'images/liorcole.png', // Image URL for Aalyah Ross in your 'public' directory
-        // Add other properties as needed
-    },
-    {
         name: 'Alexis Carrington',
         height: 175,
         hair_color: ['brown'],
@@ -68,9 +68,9 @@ document.getElementById('search-form').addEventListener('submit', function (e) {
 
     // Your search logic using the modelsData array
     const filteredModels = modelsData.filter(model => {
-        return (hairColor === "" || model.hair_color.includes(hairColor)) &&
-            (height === "" || model.height == height) &&
-            (model.instagram >= instagramFollowers);
+        return (hairColor === "" || model.hair_color.includes(hairColor)) && // EDITED HERE
+            (height === "" || model.height == height) && 
+            (model.instagram >= instagramFollowers); 
     });
 
     const resultsDiv = document.getElementById('results');

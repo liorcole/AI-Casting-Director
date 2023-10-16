@@ -3,7 +3,7 @@ const modelsData = [
     {
         name: 'Abby Bush',
         height: 180,
-        hair_color: ['Blonde'], ['Strawberry blonde'],
+        hair_color: ['Blonde', 'Strawberry blonde'],
         instagram: 5800,
         image: 'images/abbybush.png', // Image URL for Abby Bush in your 'public' directory
         // Add other properties as needed
@@ -19,7 +19,7 @@ const modelsData = [
     {
         name: 'Africa Garcia',
         height: 179,
-        hair_color: ['brown'], ['dark brown'],
+        hair_color: ['brown', 'dark brown'],
         instagram: 4200,
         image: 'images/africagarcia.png', // Image URL for Aalyah Ross in your 'public' directory
         // Add other properties as needed
@@ -27,7 +27,7 @@ const modelsData = [
     {
         name: 'Akon Adichol',
         height: 175,
-        hair_color: ['black'], ['dark brown'],
+        hair_color: ['black', 'dark brown'],
         instagram: 2900,
         image: 'images/akonadichol.png', // Image URL for Aalyah Ross in your 'public' directory
         // Add other properties as needed
@@ -35,7 +35,7 @@ const modelsData = [
     {
         name: 'LIOR COLE THE BEST MODEL IN THE WORLD',
         height: 183,
-        hair_color: ['brown'], ['light brown'],
+        hair_color: ['brown', 'light brown'],
         instagram: 5100,
         image: 'images/liorcole.png', // Image URL for Aalyah Ross in your 'public' directory
         // Add other properties as needed
@@ -64,11 +64,13 @@ document.getElementById('search-form').addEventListener('submit', function (e) {
 
     const hairColor = document.getElementById('hair-color').value;
     const height = document.getElementById('height').value;
+    const instagramFollowers = parseInt(document.getElementById('instagram-followers').value);
 
     // Your search logic using the modelsData array
     const filteredModels = modelsData.filter(model => {
-        return model.hair_color.toLowerCase() === hairColor.toLowerCase() &&
-            model.height === parseInt(height);
+        return model.hair_color.includes(hairColor) &&
+            model.height === height &&
+            model.instagram >= instagramFollowers;
     });
 
     const resultsDiv = document.getElementById('results');
@@ -84,7 +86,7 @@ document.getElementById('search-form').addEventListener('submit', function (e) {
 
         // Create and append model information
         const modelInfo = document.createElement('p');
-        modelInfo.innerHTML = `Name: ${model.name}<br>Height: ${model.height}<br>Hair Color: ${model.hair_color}<br>Instagram: ${model.instagram}`;
+        modelInfo.innerHTML = `Name: ${model.name}<br>Height: ${model.height}<br>Hair Color: ${model.hair_color.join(', ')}<br>Instagram: ${model.instagram}`;
         modelCard.appendChild(modelInfo);
 
         resultsDiv.appendChild(modelCard);

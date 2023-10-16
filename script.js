@@ -56,7 +56,67 @@ const modelsData = [
         image: 'images/allybarrows.png', // Image URL for Aalyah Ross in your 'public' directory
         // Add other properties as needed
     },
-];
+    {
+        name: 'Andrea Pires',
+        height: 175,
+        hair_color: 'brown, black',
+        hair_type: 'wavy',
+        //instagram: 'n/a',
+        type: 'Straight-size',
+        //image: 'images/andrea.png', // Add the image URL for Andrea in your 'public' directory
+        // Add other properties as needed
+    },
+    {
+        name: 'Anna Rose',
+        height: 180,
+        hair_color: 'brown',
+        hair_type: 'Straight, wavy',
+        instagram: 556,
+        type: 'Straight-size',
+        //image: 'images/annarose.png', // Add the image URL for Anna Rose in your 'public' directory
+        // Add other properties as needed
+    },
+    {
+        name: 'Anne Harjes',
+        height: 180,
+        hair_color: 'blond, dirty blond',
+        hair_type: 'Straight',
+        instagram: 720,
+        type: 'plus-size',
+        //image: 'images/anneharjes.png', // Add the image URL for Anne Harjes in your 'public' directory
+        // Add other properties as needed
+    },
+    {
+        name: 'Antonella Delgado',
+        height: 178,
+        hair_color: 'brown',
+        hair_type: 'curly',
+        instagram: 2400,
+        type: 'Straight-size',
+        //image: 'images/antonelladelgado.png', // Add the image URL for Antonella Delgado in your 'public' directory
+        // Add other properties as needed
+    },
+    {
+        name: 'Aria Polkey',
+        height: 176,
+        hair_color: 'dark brown, black',
+        hair_type: 'curly',
+        instagram: 11000,
+        type: 'Straight-size',
+        //image: 'images/ariapolkey.png', // Add the image URL for Aria Polkey in your 'public' directory
+        // Add other properties as needed
+    },
+    {
+        name: 'Audrey Harrelson',
+        height: 171,
+        hair_color: 'brown, light brown, dirty blonde',
+        hair_type: 'straight',
+        instagram: 3800,
+        type: 'mid-size',
+        //image: 'images/audreyharrelson.png', // Add the image URL for Audrey Harrelson in your 'public' directory
+        // Add other properties as needed
+    }
+    ];
 
 // Event listener for form submission
 document.getElementById('search-form').addEventListener('submit', function (e) {

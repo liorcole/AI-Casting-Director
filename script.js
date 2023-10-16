@@ -1,6 +1,14 @@
 // Define your data
 const modelsData = [
     {
+        name: 'LIOR COLE THE BEST MODEL IN THE WORLD',
+        height: 183,
+        hair_color: ['brown', 'light brown'],
+        instagram: 5100,
+        image: 'images/liorcole.png', // Image URL for Aalyah Ross in your 'public' directory
+        // Add other properties as needed
+    },
+    {
         name: 'Abby Bush',
         height: 180,
         hair_color: ['Blonde', 'Strawberry blonde'],
@@ -30,14 +38,6 @@ const modelsData = [
         hair_color: ['black', 'dark brown'],
         instagram: 2900,
         image: 'images/akonadichol.png', // Image URL for Aalyah Ross in your 'public' directory
-        // Add other properties as needed
-    },
-    {
-        name: 'LIOR COLE THE BEST MODEL IN THE WORLD',
-        height: 183,
-        hair_color: ['brown', 'light brown'],
-        instagram: 5100,
-        image: 'images/liorcole.png', // Image URL for Aalyah Ross in your 'public' directory
         // Add other properties as needed
     },
     {

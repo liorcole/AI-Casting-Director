@@ -1,6 +1,3 @@
-// Include the confetti library
-const confetti = require('canvas-confetti');
-
 // Define your data
 const modelsData = [
     {
@@ -91,16 +88,5 @@ document.getElementById('search-form').addEventListener('submit', function (e) {
         modelCard.appendChild(modelInfo);
 
         resultsDiv.appendChild(modelCard);
-
-        // Check if the name is "LIOR COLE THE BEST MODEL IN THE WORLD" and trigger confetti
-        if (model.name === 'LIOR COLE THE BEST MODEL IN THE WORLD') {
-            const duration = 5 * 1000; // Duration of confetti burst in milliseconds (5 seconds)
-            const { clientWidth, clientHeight } = document.documentElement;
-            confetti({
-                particleCount: 100, // Number of confetti particles
-                spread: 70, // Spread of confetti particles
-                origin: { y: 0.6 },
-            });
-        }
     });
 });

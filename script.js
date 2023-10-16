@@ -68,7 +68,7 @@ document.getElementById('search-form').addEventListener('submit', function (e) {
 
     // Your search logic using the modelsData array
     const filteredModels = modelsData.filter(model => {
-        return (hairColor === "" || model.hair_color.includes(hairColor)) && // EDITED HERE
+        return (hairColor === "" || model.hair_color.includes(hairColor) || (Array.isArray(model.hair_color) && model.hair_color.includes(hairColor))) &&
             (height === "" || model.height == height) && 
             (model.instagram >= instagramFollowers); 
     });

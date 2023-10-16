@@ -40,6 +40,22 @@ const modelsData = [
         image: 'images/liorcole.png', // Image URL for Aalyah Ross in your 'public' directory
         // Add other properties as needed
     },
+    {
+        name: 'Alexis Carrington',
+        height: 175,
+        hair_color: 'brown',
+        instagram: 218,900,
+        image: 'images/alexiscarrington.png', // Image URL for Aalyah Ross in your 'public' directory
+        // Add other properties as needed
+    },
+    {
+        name: 'Ally Barrows',
+        height: 174,
+        hair_color: 'blond',
+        instagram: 1,500,
+        image: 'images/allybarrows.png', // Image URL for Aalyah Ross in your 'public' directory
+        // Add other properties as needed
+    },
 ];
 
 // Event listener for form submission

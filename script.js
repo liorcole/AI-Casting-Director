@@ -4,6 +4,8 @@ const modelsData = [
         name: 'LIOR COLE THE BEST MODEL IN THE WORLD',
         height: 183,
         hair_color: ['brown', 'light brown'],
+        hair_type: 'curly',
+        type: 'Straight-size',
         instagram: 5100,
         image: 'images/liorcole.png', // Image URL for Aalyah Ross in your 'public' directory
         // Add other properties as needed
@@ -12,6 +14,8 @@ const modelsData = [
         name: 'Abby Bush',
         height: 180,
         hair_color: ['Blonde', 'Strawberry blonde'],
+        hair_type: 'Straight',
+        type: 'Straight-size',
         instagram: 5800,
         image: 'images/abbybush.png', // Image URL for Abby Bush in your 'public' directory
         // Add other properties as needed
@@ -20,6 +24,8 @@ const modelsData = [
         name: 'Aalyah Ross',
         height: 179,
         hair_color: ['black'],
+        hair_type: ['curly, dreads'],
+        type: ['Straight-size', 'Mid-size'].
         instagram: 1800,
         image: 'images/aalyahross.png', // Image URL for Aalyah Ross in your 'public' directory
         // Add other properties as needed
@@ -28,6 +34,8 @@ const modelsData = [
         name: 'Africa Garcia',
         height: 179,
         hair_color: ['brown', 'dark brown'],
+        hair_type: ['wavy'],
+        type: 'Straight-size',
         instagram: 4200,
         image: 'images/africagarcia.png', // Image URL for Aalyah Ross in your 'public' directory
         // Add other properties as needed
@@ -36,6 +44,8 @@ const modelsData = [
         name: 'Akon Adichol',
         height: 175,
         hair_color: ['black', 'dark brown'],
+        hair_type: ['shaved', 'curly'],
+        type: 'Plus-size',
         instagram: 2900,
         image: 'images/akonadichol.png', // Image URL for Aalyah Ross in your 'public' directory
         // Add other properties as needed
@@ -44,6 +54,8 @@ const modelsData = [
         name: 'Alexis Carrington',
         height: 175,
         hair_color: ['brown'],
+        hair_type: ['wavy', 'curly'],
+        type: 'Straight-size',
         instagram: 218900,
         image: 'images/alexiscarrington.png', // Image URL for Aalyah Ross in your 'public' directory
         // Add other properties as needed
@@ -52,6 +64,8 @@ const modelsData = [
         name: 'Ally Barrows',
         height: 174,
         hair_color: ['blond'],
+        hair_type: 'Straight',
+        type: ['Straight-size', 'Mid-size'],
         instagram: 1500,
         image: 'images/allybarrows.png', // Image URL for Aalyah Ross in your 'public' directory
         // Add other properties as needed
@@ -59,9 +73,9 @@ const modelsData = [
     {
         name: 'Andrea Pires',
         height: 175,
-        hair_color: 'brown, black',
+        hair_color: ['brown, black'],
         hair_type: 'wavy',
-        //instagram: 'n/a',
+        instagram: 'n/a',
         type: 'Straight-size',
         //image: 'images/andrea.png', // Add the image URL for Andrea in your 'public' directory
         // Add other properties as needed
@@ -70,7 +84,7 @@ const modelsData = [
         name: 'Anna Rose',
         height: 180,
         hair_color: 'brown',
-        hair_type: 'Straight, wavy',
+        hair_type: ['Straight, wavy'],
         instagram: 556,
         type: 'Straight-size',
         //image: 'images/annarose.png', // Add the image URL for Anna Rose in your 'public' directory
@@ -79,11 +93,11 @@ const modelsData = [
     {
         name: 'Anne Harjes',
         height: 180,
-        hair_color: 'blond, dirty blond',
+        hair_color: ['blond, dirty blond'],
         hair_type: 'Straight',
         instagram: 720,
         type: 'plus-size',
-        //image: 'images/anneharjes.png', // Add the image URL for Anne Harjes in your 'public' directory
+        image: 'images/anneharjes.png', // Add the image URL for Anne Harjes in your 'public' directory
         // Add other properties as needed
     },
     {
@@ -93,27 +107,27 @@ const modelsData = [
         hair_type: 'curly',
         instagram: 2400,
         type: 'Straight-size',
-        //image: 'images/antonelladelgado.png', // Add the image URL for Antonella Delgado in your 'public' directory
+        image: 'images/antonelladelgado.png', // Add the image URL for Antonella Delgado in your 'public' directory
         // Add other properties as needed
     },
     {
         name: 'Aria Polkey',
         height: 176,
-        hair_color: 'dark brown, black',
+        hair_color: ['dark brown, black'],
         hair_type: 'curly',
         instagram: 11000,
         type: 'Straight-size',
-        //image: 'images/ariapolkey.png', // Add the image URL for Aria Polkey in your 'public' directory
+        image: 'images/ariapolkey.png', // Add the image URL for Aria Polkey in your 'public' directory
         // Add other properties as needed
     },
     {
         name: 'Audrey Harrelson',
         height: 171,
-        hair_color: 'brown, light brown, dirty blonde',
+        hair_color: ['brown, light brown, dirty blonde'],
         hair_type: 'straight',
         instagram: 3800,
         type: 'mid-size',
-        //image: 'images/audreyharrelson.png', // Add the image URL for Audrey Harrelson in your 'public' directory
+        image: 'images/audreyharrelson.png', // Add the image URL for Audrey Harrelson in your 'public' directory
         // Add other properties as needed
     }
     ];

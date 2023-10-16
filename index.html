@@ -13,14 +13,14 @@
     <!-- Form for entering physical descriptions -->
     <form id="search-form">
         <label for="hair-color">Hair Color:</label>
-        <input type="text" id="hair-color" name="hair_color" placeholder="e.g., blonde">
+        <input type="text" id="hair-color" name="hair_color" placeholder="e.g., blonde"> <!-- EDITED HERE -->
         
         <label for="height">Height:</label>
-        <input type="text" id="height" name="height" placeholder="e.g., 175">
+        <input type="text" id="height" name="height" placeholder="e.g., 175"> <!-- EDITED HERE -->
 
         <label for="instagram-followers">Minimum Instagram Followers:</label>
         <input type="range" id="instagram-followers" name="instagram_followers" min="0" max="1000000" step="10000" value="0">
-        <output for="instagram-followers" id="followers-output">0</output>
+        <output for="instagram-followers" id="followers-output">0</output> <!-- EDITED HERE -->
 
         <button type="submit">Search</button>
     </form>
@@ -29,5 +29,13 @@
     <div id="results" class="image-container"></div>
 
     <script src="script.js"></script>
+    <script>
+        const followersOutput = document.getElementById('followers-output');
+        const instagramFollowers = document.getElementById('instagram-followers');
+        
+        instagramFollowers.addEventListener('input', function() {
+            followersOutput.textContent = instagramFollowers.value;
+        });
+    </script>
 </body>
 </html>

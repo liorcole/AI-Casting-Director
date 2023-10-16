@@ -140,6 +140,9 @@ document.getElementById('search-form').addEventListener('submit', function (e) {
 
     const minHeight = parseInt(document.getElementById('min-height').value);
     const maxHeight = parseInt(document.getElementById('max-height').value);
+
+    const hairType = document.getElementById('hair-type').value.toLowerCase();
+    const sizeType = document.getElementById('size-type').value.toLowerCase();
     
     const instagramFollowers = parseInt(document.getElementById('instagram-followers').value);
 
@@ -149,6 +152,9 @@ document.getElementById('search-form').addEventListener('submit', function (e) {
 
             (minHeight === 0 || model.height >= minHeight) &&
             (maxHeight === 250 || model.height <= maxHeight) &&
+
+            (hairType === "" || model.hair_type.includes(hairType)) &&
+            (sizeType === "" || model.type.includes(sizeType)) &&
             
             (model.instagram >= instagramFollowers);
     });

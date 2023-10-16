@@ -6,7 +6,7 @@ const modelsData = [
         hair_color: ['brown', 'light brown'],
         hair_type: ['curly'],
         type: ['Straight-size'],
-        instagram: [5100],
+        instagram: 5100,
         image: 'images/liorcole.png',
         // Add other properties as needed
     },
@@ -16,7 +16,7 @@ const modelsData = [
         hair_color: ['Blonde', 'Strawberry blonde'],
         hair_type: ['Straight'],
         type: ['Straight-size'],
-        instagram: [5800],
+        instagram: 5800,
         image: 'images/abbybush.png',
         // Add other properties as needed
     },
@@ -26,7 +26,7 @@ const modelsData = [
         hair_color: ['black'],
         hair_type: ['curly', 'dreads'],
         type: ['Straight-size', 'Mid-size'],
-        instagram: [1800],
+        instagram: 1800,
         image: 'images/aalyahross.png',
         // Add other properties as needed
     },
@@ -36,7 +36,7 @@ const modelsData = [
         hair_color: ['brown', 'dark brown'],
         hair_type: ['wavy'],
         type: ['Straight-size'],
-        instagram: [4200],
+        instagram: 4200,
         image: 'images/africagarcia.png',
         // Add other properties as needed
     },
@@ -46,7 +46,7 @@ const modelsData = [
         hair_color: ['black', 'dark brown'],
         hair_type: ['shaved', 'curly'],
         type: ['Plus-size'],
-        instagram: [2900],
+        instagram: 2900,
         image: 'images/akonadichol.png',
         // Add other properties as needed
     },
@@ -56,7 +56,7 @@ const modelsData = [
         hair_color: ['brown'],
         hair_type: ['wavy', 'curly'],
         type: ['Straight-size'],
-        instagram: [218900],
+        instagram: 218900,
         image: 'images/alexiscarrington.png',
         // Add other properties as needed
     },
@@ -66,7 +66,7 @@ const modelsData = [
         hair_color: ['blond'],
         hair_type: ['Straight'],
         type: ['Straight-size', 'Mid-size'],
-        instagram: [1500],
+        instagram: 1500,
         image: 'images/allybarrows.png',
         // Add other properties as needed
     },
@@ -76,7 +76,7 @@ const modelsData = [
         hair_color: ['brown', 'black'],
         hair_type: ['wavy'],
         type: ['Straight-size'],
-        instagram: ['n/a'],
+        instagram: 'n/a',
         // image: 'images/andrea.png', // Add the image URL for Andrea in your 'public' directory
         // Add other properties as needed
     },
@@ -86,7 +86,7 @@ const modelsData = [
         hair_color: ['brown'],
         hair_type: ['Straight', 'wavy'],
         type: ['Straight-size'],
-        instagram: [556],
+        instagram: 556,
         image: 'images/annarose.png',
         // Add other properties as needed
     },
@@ -96,7 +96,7 @@ const modelsData = [
         hair_color: ['blond', 'dirty blond'],
         hair_type: ['Straight'],
         type: ['plus-size'],
-        instagram: [],
+        instagram: 0,
         image: 'images/anneharjes.png',
         // Add other properties as needed
     },
@@ -106,7 +106,7 @@ const modelsData = [
         hair_color: ['brown'],
         hair_type: ['curly'],
         type: ['Straight-size'],
-        instagram: [2400],
+        instagram: 2400,
         image: 'images/antonelladelgado.png',
         // Add other properties as needed
     },
@@ -116,7 +116,7 @@ const modelsData = [
         hair_color: ['dark brown', 'black'],
         hair_type: ['curly'],
         type: ['Straight-size'],
-        instagram: [11000],
+        instagram: 11000,
         image: 'images/ariapolkey.png',
         // Add other properties as needed
     },
@@ -126,7 +126,7 @@ const modelsData = [
         hair_color: ['brown', 'light brown', 'dirty blonde'],
         hair_type: ['straight'],
         type: ['mid-size'],
-        instagram: [3800],
+        instagram: 3800,
         image: 'images/audreyharrelson.png',
         // Add other properties as needed
     }

@@ -4,6 +4,7 @@ const modelsData = [
         name: 'Abby Bush',
         height: 180,
         hair_color: 'Blonde',
+        instagram: 5,800,
         image: 'images/abbybush.png', // Image URL for Abby Bush in your 'public' directory
         // Add other properties as needed
     },
@@ -11,7 +12,32 @@ const modelsData = [
         name: 'Aalyah Ross',
         height: 179,
         hair_color: 'black',
+        instagram: 1,800,
         image: 'images/aalyahross.png', // Image URL for Aalyah Ross in your 'public' directory
+        // Add other properties as needed
+    },
+    {
+        name: 'Africa Garcia',
+        height: 179,
+        hair_color: 'brown',
+        instagram: 4,200,
+        image: 'images/africagarcia.png', // Image URL for Aalyah Ross in your 'public' directory
+        // Add other properties as needed
+    },
+    {
+        name: 'Akon Adichol',
+        height: 175,
+        hair_color: 'black',
+        instagram: 2,900,
+        image: 'images/akonadichol.png', // Image URL for Aalyah Ross in your 'public' directory
+        // Add other properties as needed
+    },
+    {
+        name: 'LIOR COLE THE BEST MODEL IN THE WORLD',
+        height: 183,
+        hair_color: 'brown',
+        instagram: 5,100,
+        image: 'images/liorcole.png', // Image URL for Aalyah Ross in your 'public' directory
         // Add other properties as needed
     },
 ];

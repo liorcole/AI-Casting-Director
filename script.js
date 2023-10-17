@@ -137,16 +137,8 @@ document.getElementById('search-form').addEventListener('submit', function (e) {
     e.preventDefault();
 
     const hairColor = document.getElementById('hair-color').value.toLowerCase();
-    // Parse the height range input
-    const minHeightFeet = parseInt(document.getElementById('min-height-feet').value);
-    const minHeightInches = parseInt(document.getElementById('min-height-inches').value);
-    const maxHeightFeet = parseInt(document.getElementById('max-height-feet').value);
-    const maxHeightInches = parseInt(document.getElementById('max-height-inches').value);
-    
-    // Convert height values to centimeters
-    const minHeightCm = (minHeightFeet * 30.48) + (minHeightInches * 2.54); // CHANGED HERE
-    const maxHeightCm = (maxHeightFeet * 30.48) + (maxHeightInches * 2.54); // CHANGED HERE
-    
+    const minHeightCm = parseFloat(document.getElementById('min-height-cm').value); // Updated to centimeters
+    const maxHeightCm = parseFloat(document.getElementById('max-height-cm').value); // Updated to centimeters
     const hairType = document.getElementById('hair-type').value.toLowerCase();
     const sizeType = document.getElementById('size-type').value.toLowerCase();
     const instagramFollowers = parseInt(document.getElementById('instagram-followers').value);
@@ -154,12 +146,11 @@ document.getElementById('search-form').addEventListener('submit', function (e) {
     // Your search logic using the modelsData array
     const filteredModels = modelsData.filter(model => {
         return (hairColor === "" || model.hair_color.some(color => color.toLowerCase() === hairColor)) &&
-            (minHeightCm === 0 || model.height >= minHeightCm) && // CHANGED HERE
-            (maxHeightCm === 0 || model.height <= maxHeightCm) && // CHANGED HERE
+            (minHeightCm === 0 || model.height >= minHeightCm) &&
+            (maxHeightCm === 0 || model.height <= maxHeightCm) &&
             (hairType === "" || model.hair_type.includes(hairType)) &&
             (sizeType === "" || model.type.includes(sizeType)) &&
             (model.instagram >= instagramFollowers);
-    
     });
 
     const resultsDiv = document.getElementById('results');

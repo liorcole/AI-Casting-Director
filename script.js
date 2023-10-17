@@ -152,8 +152,14 @@ document.getElementById('search-form').addEventListener('submit', function (e) {
     const instagramFollowers = parseInt(document.getElementById('instagram-followers').value);
 
    // Get the values from the height sliders
-    const minHeight = parseInt(document.getElementById('height-slider-min').value);
-    const maxHeight = parseInt(document.getElementById('height-slider-max').value);
+    const minHeightFeet = parseInt(document.getElementById('min-height-feet').value); // CHANGED HERE
+    const minHeightInches = parseInt(document.getElementById('min-height-inches').value); // CHANGED HERE
+    const maxHeightFeet = parseInt(document.getElementById('max-height-feet').value); // CHANGED HERE
+    const maxHeightInches = parseInt(document.getElementById('max-height-inches').value);
+
+    / Convert height values to centimeters
+    const minHeightCm = (minHeightFeet * 30.48) + (minHeightInches * 2.54); // CHANGED HERE
+    const maxHeightCm = (maxHeightFeet * 30.48) + (maxHeightInches * 2.54); // CHANGED HERE
 
     // Your search logic using the modelsData array
     const filteredModels = modelsData.filter(model => {

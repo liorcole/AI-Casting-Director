@@ -138,10 +138,14 @@ document.getElementById('search-form').addEventListener('submit', function (e) {
 
     const hairColor = document.getElementById('hair-color').value.toLowerCase();
     // Parse the height range input
-    const heightRangeInput = document.getElementById('height-range').value;
-    const heightRange = heightRangeInput.split('-');
-    const minHeight = parseInt(heightRange[0]);
-    const maxHeight = parseInt(heightRange[1]);
+    const minHeightFeet = parseInt(document.getElementById('min-height-feet').value); // CHANGED HERE
+    const minHeightInches = parseInt(document.getElementById('min-height-inches').value); // CHANGED HERE
+    const maxHeightFeet = parseInt(document.getElementById('max-height-feet').value); // CHANGED HERE
+    const maxHeightInches = parseInt(document.getElementById('max-height-inches').value); // CHANGED HERE
+
+    // Convert height values to centimeters
+    const minHeightCm = (minHeightFeet * 30.48) + (minHeightInches * 2.54); // CHANGED HERE
+    const maxHeightCm = (maxHeightFeet * 30.48) + (maxHeightInches * 2.54); // CHANGED HERE
     
     const hairType = document.getElementById('hair-type').value.toLowerCase();
     const sizeType = document.getElementById('size-type').value.toLowerCase();
@@ -154,8 +158,8 @@ document.getElementById('search-form').addEventListener('submit', function (e) {
     // Your search logic using the modelsData array
     const filteredModels = modelsData.filter(model => {
         return (hairColor === "" || model.hair_color.some(color => color.toLowerCase() === hairColor)) &&
-            (minHeight === 0 || model.height >= minHeight) &&
-            (maxHeight === 250 || model.height <= maxHeight) &&
+            (minHeightCm === 0 || model.height >= minHeightCm) && // CHANGED HERE
+            (maxHeightCm === 0 || model.height <= maxHeightCm) && // CHANGED HERE
             (hairType === "" || model.hair_type.includes(hairType)) &&
             (sizeType === "" || model.type.includes(sizeType)) &&
             (model.instagram >= instagramFollowers);

@@ -137,21 +137,24 @@ document.getElementById('search-form').addEventListener('submit', function (e) {
     e.preventDefault();
 
     const hairColor = document.getElementById('hair-color').value.toLowerCase();
-
-    const minHeight = parseInt(document.getElementById('min-height').value);
-    const maxHeight = parseInt(document.getElementById('max-height').value);
-
+    // Parse the height range input
+    const heightRangeInput = document.getElementById('height-range').value;
+    const heightRange = heightRangeInput.split('-');
+    const minHeight = parseInt(heightRange[0]);
+    const maxHeight = parseInt(heightRange[1]);
+    
     const hairType = document.getElementById('hair-type').value.toLowerCase();
     const sizeType = document.getElementById('size-type').value.toLowerCase();
-    
     const instagramFollowers = parseInt(document.getElementById('instagram-followers').value);
 
     // Your search logic using the modelsData array
     const filteredModels = modelsData.filter(model => {
         return (hairColor === "" || model.hair_color.some(color => color.toLowerCase() === hairColor)) &&
 
-            (minHeight === 0 || model.height >= minHeight) &&
-            (maxHeight === 250 || model.height <= maxHeight) &&
+            ((isNaN(minHeight) || model.height >= minHeight) && (isNaN(maxHeight) || model.height <= maxHeight)) && // Height range condition
+            (hairType === "" || model.hair_type.includes(hairType)) &&
+            (sizeType === "" || model.type.includes(sizeType)) &&
+            (model.instagram >= instagramFollowers);
 
             (hairType === "" || model.hair_type.includes(hairType)) &&
             (sizeType === "" || model.type.includes(sizeType)) &&

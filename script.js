@@ -500,6 +500,36 @@ const modelsData = [
         image: 'images/sarahlewis.png',
         // Add other properties as needed
     },
+    {
+        name: 'Shantae Leslie',
+        height: 177,
+        hair_color: ['dark-brown', 'black', 'brown'],
+        hair_type: ['braids', 'cornrows'],
+        type: ['straight-size'],
+        instagram: 2100,
+        image: 'images/shantaeleslie.png',
+        // Add other properties as needed
+    },
+    {
+        name: 'Sihana Shalaj',
+        height: 178,
+        hair_color: ['dark-brown', 'black'],
+        hair_type: ['bob', 'curly'],
+        type: ['straight-size'],
+        instagram: 9800,
+        image: 'images/sihanashalaj.png',
+        // Add other properties as needed
+    },
+    {
+        name: 'Tais Vieira',
+        height: 176,
+        hair_color: ['dark-brown', 'black'],
+        hair_type: ['straight', 'wavy'],
+        type: ['straight-size'],
+        instagram: 2000,
+        image: 'images/taisvieira.png',
+        // Add other properties as needed
+    },
 ];
 
 // Event listener for form submission

@@ -464,7 +464,7 @@ const modelsData = [
         name: 'Reagan Flynn',
         height: 182,
         hair_color: ['dark-brown', 'brown'],
-        hair_type: ['wavy'. 'straight'],
+        hair_type: ['wavy', 'straight'],
         type: ['straight-size'],
         instagram: 911,
         image: 'images/reaganflynn.png',

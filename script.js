@@ -454,7 +454,7 @@ const modelsData = [
         name: 'Olivia Petersen',
         height: 181,
         hair_color: ['dark-brown', 'brown'],
-        hair_type: ['wavy'. 'straight'],
+        hair_type: ['wavy', 'straight'],
         type: ['straight-size'],
         instagram: 4500,
         image: 'images/oliviapetersen.png',

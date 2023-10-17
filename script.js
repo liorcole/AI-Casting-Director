@@ -207,7 +207,7 @@ const modelsData = [
         hair_type: ['wavy'],
         type: ['straight-size'],
         instagram: 1900,
-        image: 'images/eleanor.png',
+        image: 'images/eleanorchromy.png',
         // Add other properties as needed
     },
     {

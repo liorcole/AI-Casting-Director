@@ -440,96 +440,96 @@ const modelsData = [
         image: 'images/nicsummers.png',
         // Add other properties as needed
     },
-    // {
-    //     name: 'Niko',
-    //     height: 177,
-    //     hair_color: ['strawberry-blonde', 'light-brown'],
-    //     hair_type: ['wavy'. 'straight'],
-    //     type: ['straight-size'],
-    //     instagram: 9400,
-    //     image: 'images/niko.png',
-    //     // Add other properties as needed
-    // },
-    // {
-    //     name: 'Olivia Petersen',
-    //     height: 181,
-    //     hair_color: ['dark-brown', 'brown'],
-    //     hair_type: ['wavy'. 'straight'],
-    //     type: ['straight-size'],
-    //     instagram: 4500,
-    //     image: 'images/oliviapetersen.png',
-    //     // Add other properties as needed
-    // },
-    // {
-    //     name: 'Reagan Flynn',
-    //     height: 182,
-    //     hair_color: ['dark-brown', 'brown'],
-    //     hair_type: ['wavy'. 'straight'],
-    //     type: ['straight-size'],
-    //     instagram: 911,
-    //     image: 'images/reaganflynn.png',
-    //     // Add other properties as needed
-    // },
-    // {
-    //     name: 'Sara Arabzadeh',
-    //     height: 179,
-    //     hair_color: ['dark-brown', 'brown'],
-    //     hair_type: ['curly'],
-    //     type: ['straight-size'],
-    //     instagram: 0,
-    //     image: 'images/saraarabzadeh.png',
-    //     // Add other properties as needed
-    // },
-    // {
-    //     name: 'Sarah Armstrong',
-    //     height: 177,
-    //     hair_color: ['dark-brown', 'black'],
-    //     hair_type: ['straight', 'bob'],
-    //     type: ['straight-size'],
-    //     instagram: 2700,
-    //     image: 'images/saraharmstrong.png',
-    //     // Add other properties as needed
-    // },
-    // {
-    //     name: 'Sarah Lewis',
-    //     height: 177,
-    //     hair_color: ['brown'],
-    //     hair_type: ['wavy'],
-    //     type: ['straight-size'],
-    //     instagram: 638,
-    //     image: 'images/sarahlewis.png',
-    //     // Add other properties as needed
-    // },
-    // {
-    //     name: 'Shantae Leslie',
-    //     height: 177,
-    //     hair_color: ['dark-brown', 'black', 'brown'],
-    //     hair_type: ['braids', 'cornrows'],
-    //     type: ['straight-size'],
-    //     instagram: 2100,
-    //     image: 'images/shantaeleslie.png',
-    //     // Add other properties as needed
-    // },
-    // {
-    //     name: 'Sihana Shalaj',
-    //     height: 178,
-    //     hair_color: ['dark-brown', 'black'],
-    //     hair_type: ['bob', 'curly'],
-    //     type: ['straight-size'],
-    //     instagram: 9800,
-    //     image: 'images/sihanashalaj.png',
-    //     // Add other properties as needed
-    // },
-    // {
-    //     name: 'Tais Vieira',
-    //     height: 176,
-    //     hair_color: ['dark-brown', 'black'],
-    //     hair_type: ['straight', 'wavy'],
-    //     type: ['straight-size'],
-    //     instagram: 2000,
-    //     image: 'images/taisvieira.png',
-    //     // Add other properties as needed
-    // },
+    {
+        name: 'Niko',
+        height: 177,
+        hair_color: ['strawberry-blonde', 'light-brown'],
+        hair_type: ['wavy', 'straight'],
+        type: ['straight-size'],
+        instagram: 9400,
+        image: 'images/niko.png',
+        // Add other properties as needed
+    },
+    {
+        name: 'Olivia Petersen',
+        height: 181,
+        hair_color: ['dark-brown', 'brown'],
+        hair_type: ['wavy'. 'straight'],
+        type: ['straight-size'],
+        instagram: 4500,
+        image: 'images/oliviapetersen.png',
+        // Add other properties as needed
+    },
+    {
+        name: 'Reagan Flynn',
+        height: 182,
+        hair_color: ['dark-brown', 'brown'],
+        hair_type: ['wavy'. 'straight'],
+        type: ['straight-size'],
+        instagram: 911,
+        image: 'images/reaganflynn.png',
+        // Add other properties as needed
+    },
+    {
+        name: 'Sara Arabzadeh',
+        height: 179,
+        hair_color: ['dark-brown', 'brown'],
+        hair_type: ['curly'],
+        type: ['straight-size'],
+        instagram: 0,
+        image: 'images/saraarabzadeh.png',
+        // Add other properties as needed
+    },
+    {
+        name: 'Sarah Armstrong',
+        height: 177,
+        hair_color: ['dark-brown', 'black'],
+        hair_type: ['straight', 'bob'],
+        type: ['straight-size'],
+        instagram: 2700,
+        image: 'images/saraharmstrong.png',
+        // Add other properties as needed
+    },
+    {
+        name: 'Sarah Lewis',
+        height: 177,
+        hair_color: ['brown'],
+        hair_type: ['wavy'],
+        type: ['straight-size'],
+        instagram: 638,
+        image: 'images/sarahlewis.png',
+        // Add other properties as needed
+    },
+    {
+        name: 'Shantae Leslie',
+        height: 177,
+        hair_color: ['dark-brown', 'black', 'brown'],
+        hair_type: ['braids', 'cornrows'],
+        type: ['straight-size'],
+        instagram: 2100,
+        image: 'images/shantaeleslie.png',
+        // Add other properties as needed
+    },
+    {
+        name: 'Sihana Shalaj',
+        height: 178,
+        hair_color: ['dark-brown', 'black'],
+        hair_type: ['bob', 'curly'],
+        type: ['straight-size'],
+        instagram: 9800,
+        image: 'images/sihanashalaj.png',
+        // Add other properties as needed
+    },
+    {
+        name: 'Tais Vieira',
+        height: 176,
+        hair_color: ['dark-brown', 'black'],
+        hair_type: ['straight', 'wavy'],
+        type: ['straight-size'],
+        instagram: 2000,
+        image: 'images/taisvieira.png',
+        // Add other properties as needed
+    },
 ];
 
 // Event listener for form submission

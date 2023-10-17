@@ -25,7 +25,12 @@
         <input type="text" id="hair-type" placeholder="Enter hair type">
 
         <label for="size-type">Size Type:</label>
-        <input type="text" id="size-type" placeholder="Enter size type">
+        <select id="size-type" name="size_type">
+            <option value="">Any</option> <!-- Added "Any" option -->
+            <option value="plus-size">Plus-Size</option>
+            <option value="mid-size">Mid-Size</option>
+            <option value="straight-size">Straight-Size</option>
+        </select> <!-- Dropdown menu for size type -->
 
         <label for="instagram-followers">Minimum Instagram Followers:</label>
         <input type="range" id="instagram-followers" name="instagram_followers" min="0" max="1000000" step="10000" value="0">

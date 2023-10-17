@@ -16,15 +16,13 @@
         <input type="text" id="hair-color" name="hair_color" placeholder="e.g., blonde">
         <br>
         
-        <label for="height-range">Height Range:</label>
-        <div id="height-range-slider">
-            <input type="range" id="min-height-feet" min="0" max="8" step="1" value="0">
-            <span id="height-min-value">0</span> feet - 
-            <input type="range" id="max-height-feet" min="0" max="8" step="1" value="0">
-            <span id="height-max-value">0</span> feet
-            <input type="range" id="max-height-inches" min="0" max="11" step="1" value="0">
-            <span id="height-max-inches">0</span> inches
-        </div>
+        <label for="min-height-cm">Minimum Height (in cm):</label>
+        <input type="number" id="min-height-cm" name="min_height_cm" placeholder="e.g., 160">
+        <br>
+
+        <label for="max-height-cm">Maximum Height (in cm):</label>
+        <input type="number" id="max-height-cm" name="max_height_cm" placeholder="e.g., 180">
+        <br>
 
         <label for="hair-type">Hair Type:</label>
         <input type="text" id="hair-type" placeholder="Enter hair type">

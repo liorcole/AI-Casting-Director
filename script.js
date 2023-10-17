@@ -136,7 +136,7 @@ const modelsData = [
 document.getElementById('search-form').addEventListener('submit', function (e) {
     e.preventDefault();
 
-    const hairColor = document.getElementById('hair-color').value.toLowerCase();
+    const hairColors = Array.from(document.querySelectorAll('input[name="hair_color"]:checked')).map(input => input.value);
     const minHeightCm = parseFloat(document.getElementById('min-height-cm').value) || 0; // Set a default of 0
     const maxHeightCm = parseFloat(document.getElementById('max-height-cm').value) || 300; // Set a default of 300 cm
     const hairType = document.getElementById('hair-type').value.toLowerCase();
@@ -145,7 +145,7 @@ document.getElementById('search-form').addEventListener('submit', function (e) {
 
     // Your search logic using the modelsData array
     const filteredModels = modelsData.filter(model => {
-        return (hairColor === "" || model.hair_color.some(color => color.toLowerCase() === hairColor)) &&
+        return (hairColors.length === 0 || hairColors.some(color => model.hair_color.includes(color))) &&
             (model.height >= minHeightCm) && // No need to check if minHeightCm is 0
             (model.height <= maxHeightCm) && // No need to check if maxHeightCm is 300
             (hairType === "" || model.hair_type.includes(hairType)) &&

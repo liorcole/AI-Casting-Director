@@ -137,8 +137,8 @@ document.getElementById('search-form').addEventListener('submit', function (e) {
     e.preventDefault();
 
     const hairColor = document.getElementById('hair-color').value.toLowerCase();
-    const minHeightCm = parseFloat(document.getElementById('min-height-cm').value); // Updated to centimeters
-    const maxHeightCm = parseFloat(document.getElementById('max-height-cm').value); // Updated to centimeters
+    const minHeightCm = parseFloat(document.getElementById('min-height-cm').value) || 0; // Set a default of 0
+    const maxHeightCm = parseFloat(document.getElementById('max-height-cm').value) || 300; // Set a default of 300 cm
     const hairType = document.getElementById('hair-type').value.toLowerCase();
     const sizeType = document.getElementById('size-type').value.toLowerCase();
     const instagramFollowers = parseInt(document.getElementById('instagram-followers').value);
@@ -146,8 +146,8 @@ document.getElementById('search-form').addEventListener('submit', function (e) {
     // Your search logic using the modelsData array
     const filteredModels = modelsData.filter(model => {
         return (hairColor === "" || model.hair_color.some(color => color.toLowerCase() === hairColor)) &&
-            (minHeightCm === 0 || model.height >= minHeightCm) &&
-            (maxHeightCm === 0 || model.height <= maxHeightCm) &&
+            (model.height >= minHeightCm) && // No need to check if minHeightCm is 0
+            (model.height <= maxHeightCm) && // No need to check if maxHeightCm is 300
             (hairType === "" || model.hair_type.includes(hairType)) &&
             (sizeType === "" || model.type.includes(sizeType)) &&
             (model.instagram >= instagramFollowers);

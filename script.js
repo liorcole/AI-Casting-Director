@@ -530,6 +530,26 @@ const modelsData = [
         image: 'images/taisvieira.png',
         // Add other properties as needed
     },
+    {
+        name: 'Tara van Eck',
+        height: 178,
+        hair_color: ['blonde', 'light-brown'],
+        hair_type: ['straight', 'bangs', 'wavy'],
+        type: ['straight-size'],
+        instagram: 1600,
+        image: 'images/taravaneck.png',
+        // Add other properties as needed
+    },
+    {
+        name: 'Tida Rosvall',
+        height: 179,
+        hair_color: ['blonde'],
+        hair_type: ['curly', 'bangs'],
+        type: ['straight-size'],
+        instagram: 1700,
+        image: 'images/tidarosvall.png',
+        // Add other properties as needed
+    },
 ];
 
 // Event listener for form submission

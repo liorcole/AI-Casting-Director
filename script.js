@@ -3,7 +3,7 @@ const modelsData = [
     {
         name: 'LIOR COLE THE BEST MODEL IN THE WORLD',
         height: 183,
-        hair_color: ['brown', 'light brown'],
+        hair_color: ['brown', 'light-brown'],
         hair_type: ['curly'],
         type: ['straight-size'],
         instagram: 5100,
@@ -13,7 +13,7 @@ const modelsData = [
     {
         name: 'Abby Bush',
         height: 180,
-        hair_color: ['Blonde', 'Strawberry blonde'],
+        hair_color: ['blonde', 'strawberry-blonde'],
         hair_type: ['Straight'],
         type: ['straight-size'],
         instagram: 5800,
@@ -33,7 +33,7 @@ const modelsData = [
     {
         name: 'Africa Garcia',
         height: 179,
-        hair_color: ['brown', 'dark brown'],
+        hair_color: ['brown', 'dark-brown'],
         hair_type: ['wavy'],
         type: ['straight-size'],
         instagram: 4200,
@@ -43,7 +43,7 @@ const modelsData = [
     {
         name: 'Akon Adichol',
         height: 175,
-        hair_color: ['black', 'dark brown'],
+        hair_color: ['black', 'dark-brown'],
         hair_type: ['shaved', 'curly'],
         type: ['plus-size'],
         instagram: 2900,
@@ -63,7 +63,7 @@ const modelsData = [
     {
         name: 'Ally Barrows',
         height: 174,
-        hair_color: ['blond'],
+        hair_color: ['blonde'],
         hair_type: ['Straight'],
         type: ['straight-size', 'mid-size'],
         instagram: 1500,
@@ -93,7 +93,7 @@ const modelsData = [
     {
         name: 'Anne Harjes',
         height: 180,
-        hair_color: ['blond', 'dirty blond'],
+        hair_color: ['blond', 'light-brown'],
         hair_type: ['Straight'],
         type: ['plus-size'],
         instagram: 0,
@@ -113,7 +113,7 @@ const modelsData = [
     {
         name: 'Aria Polkey',
         height: 176,
-        hair_color: ['dark brown', 'black'],
+        hair_color: ['dark-brown', 'black'],
         hair_type: ['curly'],
         type: ['straight-size'],
         instagram: 11000,
@@ -123,7 +123,7 @@ const modelsData = [
     {
         name: 'Audrey Harrelson',
         height: 171,
-        hair_color: ['brown', 'light brown', 'dirty blonde'],
+        hair_color: ['brown', 'light-brown'],
         hair_type: ['straight'],
         type: ['mid-size'],
         instagram: 3800,

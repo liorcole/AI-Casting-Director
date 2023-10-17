@@ -350,6 +350,16 @@ const modelsData = [
         image: 'images/leylagreiss.png',
         // Add other properties as needed
     },
+    {
+        name: 'Maddi Bendit',
+        height: 2700,
+        hair_color: ['brown', 'light-brown'],
+        hair_type: ['wavy'],
+        type: ['straight-size'],
+        instagram: 2700,
+        image: 'images/maddibendit.png',
+        // Add other properties as needed
+    },
 ];
 
 // Event listener for form submission

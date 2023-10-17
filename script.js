@@ -300,6 +300,56 @@ const modelsData = [
         image: 'images/kaylavalentin.png',
         // Add other properties as needed
     },
+    {
+        name: 'Keira Phillips',
+        height: 177,
+        hair_color: ['brown', 'dark-brown'],
+        hair_type: ['curly'],
+        type: ['straight-size'],
+        instagram: 11100,
+        image: 'images/keiraphillips.png',
+        // Add other properties as needed
+    },
+    {
+        name: 'Kenzie Stimack',
+        height: 168,
+        hair_color: ['blonde'],
+        hair_type: ['straight', 'wavy'],
+        type: ['straight-size'],
+        instagram: 2000,
+        image: 'images/kenziestimack.png',
+        // Add other properties as needed
+    },
+    {
+        name: 'Kimberly Gelabert',
+        height: 1900,
+        hair_color: ['brown', 'dark-brown'],
+        hair_type: ['afro', 'curly'],
+        type: ['straight-size'],
+        instagram: 1900,
+        image: 'images/kimberlygelabert.png',
+        // Add other properties as needed
+    },
+    {
+        name: 'Leelou',
+        height: 2900,
+        hair_color: ['light-brown'],
+        hair_type: ['straight'],
+        type: ['straight-size'],
+        instagram: 2900,
+        image: 'images/leelou.png',
+        // Add other properties as needed
+    },
+    {
+        name: 'Leyla Greiss',
+        height: 3600,
+        hair_color: ['dark-brown', 'black'],
+        hair_type: ['curly', 'wavy'],
+        type: ['straight-size'],
+        instagram: 3600,
+        image: 'images/leylagreiss.png',
+        // Add other properties as needed
+    },
 ];
 
 // Event listener for form submission

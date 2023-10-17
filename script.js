@@ -260,6 +260,46 @@ const modelsData = [
         image: 'images/inespamela.png',
         // Add other properties as needed
     },
+    {
+        name: 'Inka Williams',
+        height: 165,
+        hair_color: ['brown', 'light-brown'],
+        hair_type: ['straight', 'wavy', 'bangs'],
+        type: ['straight-size'],
+        instagram: 2000000,
+        image: 'images/inkawilliams.png',
+        // Add other properties as needed
+    },
+    {
+        name: 'Jiri Braxton',
+        height: 175,
+        hair_color: ['brown', 'dark-brown'],
+        hair_type: ['curly', 'afro'],
+        type: ['straight-size'],
+        instagram: 3900,
+        image: 'images/jiribraxton.png',
+        // Add other properties as needed
+    },
+    {
+        name: 'Kait Leigh',
+        height: 175,
+        hair_color: ['brown', 'dark-brown'],
+        hair_type: ['curly'],
+        type: ['mid-size', 'plus-size'],
+        instagram: 1600,
+        image: 'images/kaitleigh.png',
+        // Add other properties as needed
+    },
+    {
+        name: 'Kayla Valentin',
+        height: 175,
+        hair_color: ['brown', 'dark-brown'],
+        hair_type: ['straight'],
+        type: ['plus-size'],
+        instagram: 1100,
+        image: 'images/kaylavalentin.png',
+        // Add other properties as needed
+    },
 ];
 
 // Event listener for form submission

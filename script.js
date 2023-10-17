@@ -250,6 +250,16 @@ const modelsData = [
         image: 'images/graceleasure.png',
         // Add other properties as needed
     },
+    {
+        name: 'Ines Pamela',
+        height: 178,
+        hair_color: ['dark-brown', 'black'],
+        hair_type: ['buzzed', 'afro'],
+        type: ['straight-size'],
+        instagram: 2400,
+        image: 'images/inespamela.png',
+        // Add other properties as needed
+    },
 ];
 
 // Event listener for form submission

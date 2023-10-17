@@ -129,7 +129,87 @@ const modelsData = [
         instagram: 3800,
         image: 'images/audreyharrelson.png',
         // Add other properties as needed
-    }
+    },
+    {
+        name: 'Awet',
+        height: 179,
+        hair_color: ['brown', 'black'],
+        hair_type: ['cornrows', 'shaved'],
+        type: ['straight-size'],
+        instagram: 3000,
+        image: 'images/awet.png',
+        // Add other properties as needed
+    },
+    {
+        name: 'Blayse',
+        height: 179,
+        hair_color: ['brown', 'dark-brown'],
+        hair_type: ['cornrows', 'braids'],
+        type: ['straight-size'],
+        instagram: 1200,
+        image: 'images/blayse.png',
+        // Add other properties as needed
+    },
+    {
+        name: 'Boyka Matova',
+        height: 175,
+        hair_color: ['brown'],
+        hair_type: ['bob', 'straight'],
+        type: ['straight-size'],
+        instagram: 0,
+        image: 'images/boykamatova.png',
+        // Add other properties as needed
+    },
+    {
+        name: 'Brooks Baldwin',
+        height: 173,
+        hair_color: ['blond'],
+        hair_type: ['straight'],
+        type: ['straight-size'],
+        instagram: 11100,
+        image: 'images/brooksbaldwin.png',
+        // Add other properties as needed
+    },
+    {
+        name: 'Claire Smith',
+        height: 175,
+        hair_color: ['blond'],
+        hair_type: ['straight'],
+        type: ['mid-size'],
+        instagram: 1000,
+        image: 'images/clairesmith.png',
+        // Add other properties as needed
+    },
+    {
+        name: 'Ebony Francisco',
+        height: 173,
+        hair_color: ['brown'],
+        hair_type: ['dreads'],
+        type: ['straight-size'],
+        instagram: 3300,
+        image: 'images/ebonyfrancisco.png',
+        // Add other properties as needed
+    },
+    {
+        name: 'Eduarda Bretas',
+        height: 179,
+        hair_color: ['blond'],
+        hair_type: ['straight'],
+        type: ['straight-size'],
+        instagram: 11600,
+        image: 'images/eduardabretas.png',
+        // Add other properties as needed
+    },
+    {
+        name: 'Eleanor Chromy',
+        height: 178,
+        hair_color: ['blond'],
+        hair_type: ['wavy'],
+        type: ['straight-size'],
+        instagram: 1900,
+        image: 'images/eleanor.png',
+        // Add other properties as needed
+    },
 ];
 
 // Event listener for form submission

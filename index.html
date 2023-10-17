@@ -24,16 +24,22 @@
         <input type="number" id="max-height-cm" name="max_height_cm" placeholder="e.g., 180">
         <br>
 
-        <label for="hair-type">Hair Type:</label>>
-        <select id="hair-type" name="hair-type" multiple>
-            <option value="">Any</option>
-            <option value="brown">brown</option>
-            <option value="dark-brown">dark brown</option>
-            <option value="strawberry-blonde">strawberry blonde</option>
-            <option value="blonde">blonde</option>
-            <option value="light-brown">light brown</option>
-            <option value="black">light brown</option>
-        </select>
+        <label for="hair-color">Hair Color:</label>
+        <div id="hair-color-checkboxes">
+            <input type="checkbox" id="brown" name="hair_color" value="brown">
+            <label for="brown">Brown</label>
+            <input type="checkbox" id="dark-brown" name="hair_color" value="dark-brown">
+            <label for="dark-brown">Dark Brown</label>
+            <input type="checkbox" id="strawberry-blonde" name="hair_color" value="strawberry-blonde">
+            <label for="strawberry-blonde">Strawberry Blonde</label>
+            <input type="checkbox" id="blonde" name="hair_color" value="blonde">
+            <label for="blonde">Blonde</label>
+            <input type="checkbox" id="light-brown" name="hair_color" value="light-brown">
+            <label for="light-brown">Light Brown</label>
+            <input type="checkbox" id="black" name="hair_color" value="black">
+            <label for="black">Black</label>
+        </div>
+        <br>
 
         <label for="size-type">Size Type:</label>
         <select id="size-type" name="size_type">

@@ -13,14 +13,14 @@
     <!-- Form for entering physical descriptions -->
     <form id="search-form">
         <label for="hair-color">Hair Color:</label>
-        <input type="text" id="hair-color" name="hair_color" placeholder="e.g., blonde"> <!-- EDITED HERE -->
+        <input type="text" id="hair-color" name="hair_color" placeholder="e.g., blonde">
         <br>
         
         <label for="height-range">Height Range:</label>
         <div id="height-range-slider">
-            <input type="range" id="height-slider-min" min="0" max="8" step="1" value="0"> <!-- CHANGED HERE: Min Height in Feet -->
+            <input type="range" id="height-slider-min" min="0" max="8" step="1" value="0">
             <span id="height-min-value">0</span> feet - 
-            <input type="range" id="height-slider-max" min="0" max="12" step="1" value="0"> <!-- CHANGED HERE: Max Height in Feet and Inches -->
+            <input type="range" id="height-slider-max" min="0" max="12" step="1" value="0">
             <span id="height-max-value">0</span> feet
             <span id="height-max-inches">0</span> inches
         </div>
@@ -31,16 +31,15 @@
 
         <label for="size-type">Size Type:</label>
         <select id="size-type" name="size_type">
-            <option value="">Any</option> <!-- Added "Any" option -->
+            <option value="">Any</option>
             <option value="plus-size">Plus-Size</option>
             <option value="mid-size">Mid-Size</option>
             <option value="straight-size">Straight-Size</option>
-        </select> <!-- Dropdown menu for size type -->
+        </select>
 
         <label for="instagram-followers">Minimum Instagram Followers:</label>
         <input type="range" id="instagram-followers" name="instagram_followers" min="0" max="1000000" step="10000" value="0">
-        <output for="instagram-followers" id="followers-output">0</output> <!-- EDITED HERE -->
-
+        <output for="instagram-followers" id="followers-output">0</output>
         <button type="submit">Search</button>
     </form>
 

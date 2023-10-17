@@ -5,7 +5,7 @@ const modelsData = [
         height: 183,
         hair_color: ['brown', 'light brown'],
         hair_type: ['curly'],
-        type: ['Straight-size'],
+        type: ['straight-size'],
         instagram: 5100,
         image: 'images/liorcole.png',
         // Add other properties as needed
@@ -15,7 +15,7 @@ const modelsData = [
         height: 180,
         hair_color: ['Blonde', 'Strawberry blonde'],
         hair_type: ['Straight'],
-        type: ['Straight-size'],
+        type: ['straight-size'],
         instagram: 5800,
         image: 'images/abbybush.png',
         // Add other properties as needed
@@ -25,7 +25,7 @@ const modelsData = [
         height: 179,
         hair_color: ['black'],
         hair_type: ['curly', 'dreads'],
-        type: ['Straight-size', 'Mid-size'],
+        type: ['straight-size', 'mid-size'],
         instagram: 1800,
         image: 'images/aalyahross.png',
         // Add other properties as needed
@@ -35,7 +35,7 @@ const modelsData = [
         height: 179,
         hair_color: ['brown', 'dark brown'],
         hair_type: ['wavy'],
-        type: ['Straight-size'],
+        type: ['straight-size'],
         instagram: 4200,
         image: 'images/africagarcia.png',
         // Add other properties as needed
@@ -45,7 +45,7 @@ const modelsData = [
         height: 175,
         hair_color: ['black', 'dark brown'],
         hair_type: ['shaved', 'curly'],
-        type: ['Plus-size'],
+        type: ['plus-size'],
         instagram: 2900,
         image: 'images/akonadichol.png',
         // Add other properties as needed
@@ -55,7 +55,7 @@ const modelsData = [
         height: 175,
         hair_color: ['brown'],
         hair_type: ['wavy', 'curly'],
-        type: ['Straight-size'],
+        type: ['straight-size'],
         instagram: 218900,
         image: 'images/alexiscarrington.png',
         // Add other properties as needed
@@ -65,7 +65,7 @@ const modelsData = [
         height: 174,
         hair_color: ['blond'],
         hair_type: ['Straight'],
-        type: ['Straight-size', 'Mid-size'],
+        type: ['straight-size', 'mid-size'],
         instagram: 1500,
         image: 'images/allybarrows.png',
         // Add other properties as needed
@@ -75,7 +75,7 @@ const modelsData = [
         height: 175,
         hair_color: ['brown', 'black'],
         hair_type: ['wavy'],
-        type: ['Straight-size'],
+        type: ['straight-size'],
         instagram: 'n/a',
         // image: 'images/andrea.png', // Add the image URL for Andrea in your 'public' directory
         // Add other properties as needed
@@ -85,7 +85,7 @@ const modelsData = [
         height: 180,
         hair_color: ['brown'],
         hair_type: ['Straight', 'wavy'],
-        type: ['Straight-size'],
+        type: ['straight-size'],
         instagram: 556,
         image: 'images/annarose.png',
         // Add other properties as needed
@@ -105,7 +105,7 @@ const modelsData = [
         height: 178,
         hair_color: ['brown'],
         hair_type: ['curly'],
-        type: ['Straight-size'],
+        type: ['straight-size'],
         instagram: 2400,
         image: 'images/antonelladelgado.png',
         // Add other properties as needed
@@ -115,7 +115,7 @@ const modelsData = [
         height: 176,
         hair_color: ['dark brown', 'black'],
         hair_type: ['curly'],
-        type: ['Straight-size'],
+        type: ['straight-size'],
         instagram: 11000,
         image: 'images/ariapolkey.png',
         // Add other properties as needed

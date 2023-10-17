@@ -12,12 +12,32 @@
     
     <!-- Form for entering physical descriptions -->
     <form id="search-form">
-<!--         <label for="hair-color">Hair Color:</label>
-        <input type="text" id="hair-color" name="hair_color" placeholder="e.g., blonde">
+
+<!--         <label for="hair-type">Hair Type:</label>
+        <input type="text" id="hair-type" name="hair_type" placeholder="Enter hair type...">
         <br> -->
 
         <label for="hair-type">Hair Type:</label>
-        <input type="text" id="hair-type" name="hair_type" placeholder="Enter hair type...">
+        <div id="hair-type-checkboxes">
+            <input type="checkbox" id="curly" name="hair_type" value="curly">
+            <label for="curly">Curly</label>
+            <input type="checkbox" id="straight" name="hair_type" value="straight">
+            <label for="straight">Straight</label>
+            <input type="checkbox" id="bob" name="hair_type" value="bob">
+            <label for="bob">Bob</label>
+            <input type="checkbox" id="wavy" name="hair_type" value="wavy">
+            <label for="wavy">Wavy</label>
+            <input type="checkbox" id="dreads" name="hair_type" value="dreads">
+            <label for="dreads">Dreads</label>
+            <input type="checkbox" id="shaved" name="hair_type" value="shaved">
+            <label for="shaved">Shaved</label>
+            <input type="checkbox" id="afro" name="hair_type" value="afro">
+            <label for="afro">Afro</label>
+            <input type="checkbox" id="buzzed" name="hair_type" value="buzzed">
+            <label for="buzzed">Buzzed</label>
+            <input type="checkbox" id="short" name="hair_type" value="short">
+            <label for="short">Short</label>
+        </div>
         <br>
         
         <label for="min-height-cm">Minimum Height (in cm):</label>
@@ -32,6 +52,8 @@
         <div id="hair-color-checkboxes">
             <input type="checkbox" id="brown" name="hair_color" value="brown">
             <label for="brown">Brown</label>
+            <input type="checkbox" id="red" name="hair_color" value="red">
+            <label for="brown">Red</label>
             <input type="checkbox" id="dark-brown" name="hair_color" value="dark-brown">
             <label for="dark-brown">Dark Brown</label>
             <input type="checkbox" id="strawberry-blonde" name="hair_color" value="strawberry-blonde">
@@ -54,7 +76,7 @@
         </select>
 
         <label for="instagram-followers">Minimum Instagram Followers:</label>
-        <input type="range" id="instagram-followers" name="instagram_followers" min="0" max="10000000" step="5" value="0">
+        <input type="range" id="instagram-followers" name="instagram_followers" min="0" max="10000000" step="100" value="0">
         <output for="instagram-followers" id="followers-output">0</output>
         <button type="submit">Search</button>
     </form>

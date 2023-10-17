@@ -147,19 +147,19 @@ document.getElementById('search-form').addEventListener('submit', function (e) {
     const sizeType = document.getElementById('size-type').value.toLowerCase();
     const instagramFollowers = parseInt(document.getElementById('instagram-followers').value);
 
+   // Get the values from the height sliders
+    const minHeight = parseInt(document.getElementById('height-slider-min').value);
+    const maxHeight = parseInt(document.getElementById('height-slider-max').value);
+
     // Your search logic using the modelsData array
     const filteredModels = modelsData.filter(model => {
         return (hairColor === "" || model.hair_color.some(color => color.toLowerCase() === hairColor)) &&
-
-            ((isNaN(minHeight) || model.height >= minHeight) && (isNaN(maxHeight) || model.height <= maxHeight)) && // Height range condition
+            (minHeight === 0 || model.height >= minHeight) &&
+            (maxHeight === 250 || model.height <= maxHeight) &&
             (hairType === "" || model.hair_type.includes(hairType)) &&
             (sizeType === "" || model.type.includes(sizeType)) &&
             (model.instagram >= instagramFollowers);
-
-            (hairType === "" || model.hair_type.includes(hairType)) &&
-            (sizeType === "" || model.type.includes(sizeType)) &&
-            
-            (model.instagram >= instagramFollowers);
+    
     });
 
     const resultsDiv = document.getElementById('results');

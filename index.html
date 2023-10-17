@@ -18,10 +18,11 @@
         
         <label for="height-range">Height Range:</label>
         <div id="height-range-slider">
-        <!-- Create two carousel indicators for the height range -->
-            <input type="range" id="height-slider-min" min="0" max="250">
-            <input type="range" id="height-slider-max" min="0" max="250">
-            <span id="height-min-value">0</span> - <span id="height-max-value">250</span>
+            <input type="range" id="height-slider-min" min="0" max="8" step="1" value="0"> <!-- CHANGED HERE: Min Height in Feet -->
+            <span id="height-min-value">0</span> feet - 
+            <input type="range" id="height-slider-max" min="0" max="12" step="1" value="0"> <!-- CHANGED HERE: Max Height in Feet and Inches -->
+            <span id="height-max-value">0</span> feet
+            <span id="height-max-inches">0</span> inches
         </div>
         <br>
 

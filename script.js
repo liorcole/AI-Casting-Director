@@ -360,6 +360,56 @@ const modelsData = [
         image: 'images/maddibendit.png',
         // Add other properties as needed
     },
+    {
+        name: 'Mahi Kabra',
+        height: 175,
+        hair_color: ['black', 'dark-brown'],
+        hair_type: ['wavy'],
+        type: ['straight-size'],
+        instagram: 8300,
+        image: 'images/mahikabra.png',
+        // Add other properties as needed
+    },
+    {
+        name: 'Mary Ukech',
+        height: 176,
+        hair_color: ['black', 'dark-brown'],
+        hair_type: ['buzzed', 'shaved', 'afro'],
+        type: ['straight-size'],
+        instagram: 10800,
+        image: 'images/maryukech.png',
+        // Add other properties as needed
+    },
+    {
+        name: 'Mya Ghorbani',
+        height: 178,
+        hair_color: ['brown', 'dark-brown'],
+        hair_type: ['wavy', 'straight'],
+        type: ['straight-size'],
+        instagram: 8585,
+        image: 'images/myaghorbani.png',
+        // Add other properties as needed
+    },
+    {
+        name: 'Nanabah Grace',
+        height: 174,
+        hair_color: ['brown', 'dark-brown'],
+        hair_type: ['straight'],
+        type: ['straight-size'],
+        instagram: 2400,
+        image: 'images/nanabahgrace.png',
+        // Add other properties as needed
+    },
+    {
+        name: 'Naomi Ekindi Dioh',
+        height: 175,
+        hair_color: ['brown', 'light-brown'],
+        hair_type: ['corn-rows', 'curly'],
+        type: ['straight-size'],
+        instagram: 15600,
+        image: 'images/naomiekindidioh.png',
+        // Add other properties as needed
+    },
 ];
 
 // Event listener for form submission

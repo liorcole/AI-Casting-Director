@@ -44,7 +44,7 @@ const modelsData = [
         name: 'Akon Adichol',
         height: 175,
         hair_color: ['black', 'dark-brown'],
-        hair_type: ['shaved', 'curly'],
+        hair_type: ['shaved', 'curly', 'buzzed', 'afro'],
         type: ['plus-size'],
         instagram: 2900,
         image: 'images/akonadichol.png',
@@ -408,6 +408,96 @@ const modelsData = [
         type: ['straight-size'],
         instagram: 15600,
         image: 'images/naomiekindidioh.png',
+        // Add other properties as needed
+    },
+    {
+        name: 'Nat Kelly',
+        height: 175,
+        hair_color: ['brown'],
+        hair_type: ['straight', 'bob'],
+        type: ['straight-size'],
+        instagram: 23700,
+        image: 'images/natkelly.png',
+        // Add other properties as needed
+    },
+    {
+        name: 'Natalia Shadle',
+        height: 183,
+        hair_color: ['brown', 'light-brown'],
+        hair_type: ['curly'],
+        type: ['straight-size'],
+        instagram: 2200,
+        image: 'images/nataliashadle.png',
+        // Add other properties as needed
+    },
+    {
+        name: 'Nic Summers',
+        height: 180,
+        hair_color: ['brown', 'light-brown'],
+        hair_type: ['wavy'],
+        type: ['straight-size'],
+        instagram: 70400,
+        image: 'images/nicsummers.png',
+        // Add other properties as needed
+    },
+    {
+        name: 'Niko',
+        height: 177,
+        hair_color: ['strawberry-blonde', 'light-brown'],
+        hair_type: ['wavy'. 'straight'],
+        type: ['straight-size'],
+        instagram: 9400,
+        image: 'images/niko.png',
+        // Add other properties as needed
+    },
+    {
+        name: 'Olivia Petersen',
+        height: 181,
+        hair_color: ['dark-brown', 'brown'],
+        hair_type: ['wavy'. 'straight'],
+        type: ['straight-size'],
+        instagram: 4500,
+        image: 'images/oliviapetersen.png',
+        // Add other properties as needed
+    },
+    {
+        name: 'Reagan Flynn',
+        height: 182,
+        hair_color: ['dark-brown', 'brown'],
+        hair_type: ['wavy'. 'straight'],
+        type: ['straight-size'],
+        instagram: 911,
+        image: 'images/reaganflynn.png',
+        // Add other properties as needed
+    },
+    {
+        name: 'Sara Arabzadeh',
+        height: 179,
+        hair_color: ['dark-brown', 'brown'],
+        hair_type: ['curly'],
+        type: ['straight-size'],
+        instagram: 0,
+        image: 'images/saraarabzadeh.png',
+        // Add other properties as needed
+    },
+    {
+        name: 'Sarah Armstrong',
+        height: 177,
+        hair_color: ['dark-brown', 'black'],
+        hair_type: ['straight', 'bob'],
+        type: ['straight-size'],
+        instagram: 2700,
+        image: 'images/saraharmstrong.png',
+        // Add other properties as needed
+    },
+    {
+        name: 'Sarah Lewis',
+        height: 177,
+        hair_color: ['brown'],
+        hair_type: ['wavy'],
+        type: ['straight-size'],
+        instagram: 638,
+        image: 'images/sarahlewis.png',
         // Add other properties as needed
     },
 ];
